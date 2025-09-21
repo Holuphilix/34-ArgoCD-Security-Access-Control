@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: argocd-cm
+  namespace: argocd
+data:
+  url: https://localhost:8080
+  oidc.config: |
+    name: SSO-Provider
+    issuer: https://your-idp.com
+    clientID: Ov23liGYK1aarDEdkykT
+    clientSecret: $SSO_CLIENT_SECRET
+    requestedScopes: ["openid", "profile", "email"]
