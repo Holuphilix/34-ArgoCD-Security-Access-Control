@@ -1,5 +1,4 @@
-
-# **Security and Access Control in ArgoCD**
+# **Mini Project: Security and Access Control in ArgoCD**
 
 ## Project Overview
 
